@@ -1,0 +1,187 @@
+body{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 24vw;
+}
+
+header nav{
+    background-color: rgb(0, 110, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3vw
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 0 2vw;
+}
+
+div.table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(0, 110, 49)
+}
+
+p{
+    font-size: 3vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th{
+    padding: 1vw;
+    font-size: 3.3vw;
+    color:rgb(0, 110, 49)
+}
+
+td{ 
+    font-size: 2.5vw;
+}
+
+.family{
+    margin-top: 3vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.grid-item1{
+    padding: 2vw;
+    background-color: rgb(0, 110, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item1 h2{
+    font-size: 3.5vw;
+}
+
+.grid-item1 p{
+    font-size: 2.6vw;
+    font-weight: 100;
+}
+
+.grid-item2{
+    background-image:linear-gradient(to right, rgba(0, 110, 49, 1), rgba(0, 110, 49, 0)), url(./assets/Louvor\ na\ igreja.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.hope-content {
+    margin-top: 5vw;
+    display: grid;
+    grid-template-rows: 30vw 30vw 30vw;
+    gap: 6vw
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+}
+
+.content2{
+    display: grid;
+    grid-template-columns: 70% 30%; 
+}
+
+.content3{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+}
+
+.image{
+    background-size: cover;
+    background-position: bottom;
+    height: 30vw;
+}
+
+.one{
+    background-image: url(./assets/Hope2.jpg);
+}
+
+.two{
+    background-image: url(./assets/Hope1.jpg);
+}
+
+.three{
+    background-image: url(./assets/Hope3.jpg);
+}
+
+@media (orientation: landscape) {
+    header a{
+        font-size: 1.3vw;
+    }
+
+    .grid-Item1 p{
+        font-size: .6vw;
+        font-weight: 100;
+    }
+
+    header nav{
+        padding: .7vw;
+    }
+    
+    h1{
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    th{
+        font-size: 2.1vw;
+        padding: 2vw;
+    }
+
+    td{
+        font-size: 1.1vw;
+    }
+
+    .hope-content{
+        grid-template-rows: 20vw 20vw 20vw;
+    }
+
+    .image{
+        height: 20vw;
+        background-position: bottom;
+    }
+
+    .content1{
+        grid-template-columns: 20% 80%;
+    }
+
+    .content2{
+        grid-template-columns: 80% 20%;
+    }
+
+    .content3{
+        grid-template-columns: 20% 80%;
+    }
+}
